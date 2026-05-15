@@ -1,0 +1,169 @@
+.projects-section{
+    min-height:100vh;
+
+    padding:100px 10%;
+
+    color:white;
+}
+
+.projects-title{
+    margin-bottom:60px;
+}
+
+.projects-title h1{
+    font-size:3rem;
+    color:#ffffff;
+    letter-spacing:5px;
+    font-family:monospace;
+    text-shadow:0 0 15px #ff0000;
+    transition: text-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.projects-title h1:hover{
+    text-shadow: 0 0 30px #ffffff, 0 0 60px #000000;
+    transform: scale(1.03);
+}
+
+.projects-container{
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit, minmax(300px, 1fr));
+
+    gap:40px;
+}
+
+.project-card{
+    background:rgba(255,255,255,0.04);
+
+    border:1px solid rgba(255,255,255,0.1);
+
+    padding:30px;
+
+    border-radius:20px;
+
+    transition:0.4s ease;
+
+    backdrop-filter:blur(10px);
+}
+
+.project-card:hover{
+    transform:translateY(-10px);
+
+    border-color:#ff2a2a;
+
+    box-shadow:0 0 30px rgba(255,0,0,0.2);
+}
+
+.project-card h2{
+    margin-bottom:20px;
+
+    color:#ff4d4d;
+
+    font-family:monospace;
+}
+
+.project-card p{
+    margin-bottom:20px;
+
+    line-height:1.8;
+
+    color:#cccccc;
+}
+
+.project-card span{
+    display:inline-block;
+
+    margin-bottom:25px;
+
+    color:#999999;
+}
+
+.project-buttons{
+    display:flex;
+
+    gap:15px;
+}
+
+.project-buttons button{
+    padding:10px 20px;
+
+    border:none;
+
+    background:#111;
+
+    color:white;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    transition:0.3s ease;
+}
+
+.project-buttons button:hover{
+    background:#ff2a2a;
+}
+
+/* Add this to your Projects.css - image styles */
+
+.project-image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.project-card:hover .project-image img {
+    transform: scale(1.05);
+}
+
+/* Fix button styles */
+.project-buttons button {
+    padding: 10px 20px;
+    border: none;
+    background: #111;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-family: monospace;
+}
+
+.project-buttons button:hover {
+    background: #ff2a2a;
+    transform: translateY(-2px);
+}
+
+/* Scroll reveal animations for projects section */
+.projects-title h1,
+.project-card {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 0.8s ease forwards;
+  animation-timeline: view();
+  animation-range: entry 0% entry 80%;
+}
+
+.projects-title h1 {
+  animation-delay: 0s;
+}
+
+.project-card:nth-child(1) { animation-delay: 0.1s; }
+.project-card:nth-child(2) { animation-delay: 0.2s; }
+.project-card:nth-child(3) { animation-delay: 0.3s; }
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

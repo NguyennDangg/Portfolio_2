@@ -1,0 +1,42 @@
+/* Updated App.css: F1 & Anime Infusion */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Prevents navbar from covering the section title */
+#home, #about, #project {
+    scroll-margin-top: 90px;   /* Increase if your navbar is taller */
+}
+
+body {
+    background: linear-gradient(180deg, #121212 0%, #1A1A1A 100%);
+    color: #F1F1F1;
+    min-height: 100vh;
+    margin: 0;
+    background-attachment: fixed;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.05); 
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(162, 223, 247, 0.1); 
+}
+
+.primary-button {
+    background-color: #E10600; 
+    color: #FFFFFF;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 12px 24px;
+    border: none;
+    transition: 0.3s ease;
+}
+
+.primary-button:hover {
+    background-color: #A2DFF7;
+    color: #121212;
+}
