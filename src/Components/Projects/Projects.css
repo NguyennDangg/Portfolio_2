@@ -21,7 +21,7 @@
 
 .projects-title h1:hover{
     text-shadow: 0 0 30px #ffffff, 0 0 60px #000000;
-    transform: scale(1.03);
+    transform: scale(1);
 }
 
 .projects-container{
@@ -45,14 +45,6 @@
     transition:0.4s ease;
 
     backdrop-filter:blur(10px);
-}
-
-.project-card:hover{
-    transform:translateY(-10px);
-
-    border-color:#ff2a2a;
-
-    box-shadow:0 0 30px rgba(255,0,0,0.2);
 }
 
 .project-card h2{
@@ -141,29 +133,4 @@
 .project-buttons button:hover {
     background: #ff2a2a;
     transform: translateY(-2px);
-}
-
-/* Scroll reveal animations for projects section */
-.projects-title h1,
-.project-card {
-  opacity: 0;
-  transform: translateY(30px);
-  animation: fadeInUp 0.8s ease forwards;
-  animation-timeline: view();
-  animation-range: entry 0% entry 80%;
-}
-
-.projects-title h1 {
-  animation-delay: 0s;
-}
-
-.project-card:nth-child(1) { animation-delay: 0.1s; }
-.project-card:nth-child(2) { animation-delay: 0.2s; }
-.project-card:nth-child(3) { animation-delay: 0.3s; }
-
-@keyframes fadeInUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }

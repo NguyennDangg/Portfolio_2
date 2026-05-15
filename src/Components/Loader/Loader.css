@@ -1,22 +1,24 @@
 .loader{
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background: #121212; 
     color: #E10600; 
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     font-family: 'Roboto Mono', monospace;
     letter-spacing: 4px;
+    gap: 12px;
     overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
 }
 
 .loader h1{
     font-size:3rem;
-    margin-bottom:20px;
     text-shadow:0 0 20px #ff0000;
     animation:flicker 1s infinite alternate;
 }
@@ -56,18 +58,10 @@
     position: relative;
 }
 
-/* The Animated Bar */
 .progress-bar {
-    width: 0%;
     height: 100%;
     background: linear-gradient(90deg, #E10600, #A2DFF7);
-    transition: width 0.8s cubic-bezier(0.22, 1, 0.36, 1); 
 }
-
-.progress-bar.active {
-    width: 100%;
-}
-
 
 .progress-container::after {
     content: '';

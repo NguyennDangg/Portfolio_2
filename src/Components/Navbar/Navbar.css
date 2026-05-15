@@ -130,3 +130,27 @@ nav a:hover::after {
         letter-spacing: 3px;
     }
 }
+
+.mobile-menu {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: #0a0a0a;
+    border-top: 1px solid rgba(255, 42, 42, 0.2);
+    overflow: hidden;
+}
+
+.mobile-menu a {
+    padding: 16px 20px;
+    color: #df2e2e;
+    text-decoration: none;
+    font-family: monospace;
+    font-size: 1.1rem;
+    letter-spacing: 3px;
+    border-bottom: 1px solid rgba(255, 42, 42, 0.1);
+    transition: background 0.2s ease;
+}
+
+.mobile-menu a:hover {
+    background: rgba(255, 42, 42, 0.05);
+}

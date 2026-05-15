@@ -1,11 +1,15 @@
-/* Updated App.css: F1 & Anime Infusion */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 html {
     scroll-behavior: smooth;
 }
 
-/* Prevents navbar from covering the section title */
 #home, #about, #project {
-    scroll-margin-top: 90px;   /* Increase if your navbar is taller */
+    scroll-margin-top: 90px;
 }
 
 body {
@@ -15,6 +19,7 @@ body {
     margin: 0;
     background-attachment: fixed;
     font-family: 'Roboto Mono', monospace;
+    overflow-x: hidden;
 }
 
 .card {

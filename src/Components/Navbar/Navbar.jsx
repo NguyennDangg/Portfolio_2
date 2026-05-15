@@ -1,6 +1,6 @@
 import "./Navbar.css";
-import "../Animation/Animation.css";
 import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -11,40 +11,68 @@ const Navbar = () => {
   };
 
   return (
-    <header className="fade-in-up">
+    <motion.header
+      className="fade-in-up"
+      initial={{ opacity: 0, y: -40 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
+    >
       <div className="logo">Nguyen Hai Dang</div>
 
       <nav className={menuOpen ? "nav-open" : ""}>
         <ul>
-          <li className="buton delay-1">
-            <a href="#home" onClick={() => scrollTo("#home")}>Home</a>
-          </li>
-          <li className="buton delay-2">
-            <a href="#about" onClick={() => scrollTo("#about")}>About</a>
-          </li>
-          <li className="buton delay-3">
-            <a href="#project" onClick={() => scrollTo("#projects")}>Project</a>
-          </li>
-          <li className="buton delay-4">
-            <a href="#contact" onClick={() => scrollTo("#contact")}>Contact</a>
-          </li>
+          {["Home", "About", "Projects", "Contact"].map((item, i) => (
+            <motion.li
+              key={item}
+              className="buton"
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.2 + i * 0.1, duration: 0.4 }}
+            >
+              <a
+                href={`#${item.toLowerCase()}`}
+                onClick={() => scrollTo(`#${item.toLowerCase()}`)}
+              >
+                {item}
+              </a>
+            </motion.li>
+          ))}
         </ul>
       </nav>
 
       <div>
-        {/* <button
-          className="button contact buton delay-4"
-          onClick={() => window.open("https://nguynhaidang.carrd.co", "_blank")}
-        >
-          Contact
-          <i className="fa-regular fa-address-card"></i>
-        </button> */}
-
         <div className="bars" onClick={() => setMenuOpen(!menuOpen)}>
-          <i className={menuOpen ? "fa-solid fa-xmark" : "fa-solid fa-bars"}></i>
+          <i
+            className={menuOpen ? "fa-solid fa-xmark" : "fa-solid fa-bars"}
+          ></i>
         </div>
       </div>
-    </header>
+
+      <AnimatePresence>
+        {menuOpen && (
+          <motion.div
+            className="mobile-menu"
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: "auto" }}
+            exit={{ opacity: 0, height: 0 }}
+            transition={{ duration: 0.3 }}
+          >
+            {["Home", "About", "Project", "Contact"].map((item, i) => (
+              <motion.a
+                key={item}
+                href={`#${item.toLowerCase()}`}
+                onClick={() => scrollTo(`#${item.toLowerCase()}`)}
+                initial={{ opacity: 0, x: -20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ delay: i * 0.08 }}
+              >
+                {item}
+              </motion.a>
+            ))}
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </motion.header>
   );
 };
 

@@ -1,8 +1,15 @@
-import './Footer.css'
+import "./Footer.css";
+import { motion } from "framer-motion";
 
 function Footer() {
   return (
-    <footer className="footer">
+    <motion.footer
+      className="footer"
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.7, ease: "easeOut" }}
+      viewport={{ once: true, amount: 0.3 }}
+    >
       <div className="footer-line"></div>
 
       <div className="footer-content">
@@ -11,7 +18,9 @@ function Footer() {
           STATUS : SYNCHRONIZED
         </span>
 
-        <p className="footer-copy">© 2026 <span>NGUYEN HAI DANG</span></p>
+        <p className="footer-copy">
+          © 2026 <span>NGUYEN HAI DANG</span>
+        </p>
 
         <span className="footer-built">
           BUILT WITH REACT & EVANGELION ENERGY
@@ -21,17 +30,24 @@ function Footer() {
       <div className="footer-credits">
         <span>CREDITS</span>
         <div className="credits-list">
-          <a href="https://www.khara.co.jp" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://www.khara.co.jp"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             NEON GENESIS EVANGELION
           </a>
-          <a href="https://www.imdb.com/name/nm0000288/" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://www.imdb.com/name/nm0000288/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             CHRISTIAN BALE
           </a>
         </div>
       </div>
-
-    </footer>
-  )
+    </motion.footer>
+  );
 }
 
-export default Footer
+export default Footer;
