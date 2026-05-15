@@ -24,10 +24,10 @@ function Projects() {
     {
       title: 'PROJECT_03',
       description: 'Experimental frontend UI inspired by Evangelion systems.',
-      tech: 'React / Framer Motion',
+      tech: 'React / Vite / CSS',
       image:'/assets/Bale.jpeg',
-      github:'',
-      liveDemo:''
+      github:'https://github.com/NguyennDangg/Portfolio_2',
+      liveDemo:'https://portfolio-2-ruddy-psi.vercel.app/'
     }
   ]
 
