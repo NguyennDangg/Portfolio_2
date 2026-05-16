@@ -23,7 +23,7 @@ function Projects() {
     {
       title: 'PROJECT_03',
       description: 'Personal portfolio built with React/Vite. Evangelion-inspired aesthetic with custom animations and responsive design.',
-      tech: 'React / Vite / CSS',
+      tech: 'React / Framer Motion',
       image: '/assets/Bale.jpeg',
       github: 'https://github.com/NguyennDangg/Portfolio_2',
       liveDemo: 'https://portfolio-2-ruddy-psi.vercel.app/'

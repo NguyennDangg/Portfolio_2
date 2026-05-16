@@ -21,7 +21,7 @@ const Navbar = () => {
 
       <nav className={menuOpen ? "nav-open" : ""}>
         <ul>
-          {["Home", "About", "Projects", "Contact"].map((item, i) => (
+          {["Home", "About", "Project", "Contact"].map((item, i) => (
             <motion.li
               key={item}
               className="buton"
