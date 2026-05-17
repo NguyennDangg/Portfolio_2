@@ -9,7 +9,7 @@ function Projects() {
       description: 'Anime-inspired portfolio built with HTML/CSS and Javascript.',
       tech: 'JavaScript / HTML / CSS',
       image: '/assets/Reipfp.jpg',
-      github: 'https://github.com/NguyennDangg/Portfolio_1',
+      github: 'https://github.com/NguyennDangg',
       liveDemo: 'https://portfoliodanguwu.vercel.app/'
     },
     {
@@ -17,7 +17,7 @@ function Projects() {
       description: 'Interactive to-do list application with local storage.',
       tech: 'JavaScript / HTML / CSS',
       image: '/assets/rei.jpeg',
-      github: 'https://github.com/NguyennDangg/TodoList',
+      github: 'https://github.com/NguyennDangg',
       liveDemo: 'https://todolist-pied-phi-58.vercel.app/'
     },
     {
@@ -25,7 +25,7 @@ function Projects() {
       description: 'Personal portfolio built with React/Vite. Evangelion-inspired aesthetic with custom animations and responsive design.',
       tech: 'React / Framer Motion',
       image: '/assets/Bale.jpeg',
-      github: 'https://github.com/NguyennDangg/Portfolio_2',
+      github: 'https://github.com/NguyennDangg',
       liveDemo: 'https://portfolio-2-ruddy-psi.vercel.app/'
     }
   ]
