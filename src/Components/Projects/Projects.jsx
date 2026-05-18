@@ -27,6 +27,14 @@ function Projects() {
       image: '/assets/Bale.jpeg',
       github: 'https://github.com/NguyennDangg',
       liveDemo: 'https://portfolio-2-ruddy-psi.vercel.app/'
+    },
+    {
+      title: 'PROJECT_04',
+      description: 'Work in Progress',
+      tech: 'React / Framer Motion / SASS',
+      image: '/assets/MioSenpai.jpg',
+      github: '',
+      liveDemo: ''
     }
   ]
 
