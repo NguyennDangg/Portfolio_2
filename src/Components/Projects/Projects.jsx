@@ -31,7 +31,7 @@ function Projects() {
     {
       title: 'PROJECT_04',
       description: 'Work in Progress',
-      tech: 'React / Framer Motion / SASS',
+      tech: 'React / Framer Motion / SCSS',
       image: '/assets/MioSenpai.jpg',
       github: '',
       liveDemo: ''
