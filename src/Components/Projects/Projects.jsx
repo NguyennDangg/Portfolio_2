@@ -73,7 +73,11 @@ function Projects() {
 
             <div className="project-buttons">
               <motion.button
-                onClick={() => window.open(project.github, "_blank")}
+                onClick={() => {
+                  if (!project.github) return;
+                  window.open(project.github, "_blank");
+                }}
+                disabled={!project.github}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 style={{
@@ -85,9 +89,11 @@ function Projects() {
               </motion.button>
 
               <motion.button
-                onClick={() =>
-                  project.liveDemo && window.open(project.liveDemo, "_blank")
-                }
+                onClick={() => {
+                  if (!project.liveDemo) return;
+                  project.liveDemo && window.open(project.liveDemo, "_blank");
+                }}
+                disabled={!project.liveDemo}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 style={{
