@@ -38,6 +38,14 @@ function Projects() {
       github: "",
       liveDemo: "https://todo-app-woad-nine-16.vercel.app/",
     },
+    {
+      title: "PROJECT_05",
+      description:"Work in Progress",
+      tech: "",
+      image: "https://static.vecteezy.com/system/resources/previews/022/655/959/original/work-in-progress-rubber-stamp-work-in-progress-grunge-stamp-seal-illustration-vector.jpg",
+      github: "",
+      liveDemo: "",
+    },
   ];
 
   return (
