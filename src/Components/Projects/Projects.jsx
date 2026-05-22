@@ -35,7 +35,7 @@ function Projects() {
         "A todo list app built with React, Vite, and Framer Motion — featuring Haimiya Mio from Haimiya Senpai is Scary and Cute as an interactive companion character.",
       tech: "React / Framer Motion / SCSS",
       image: "/assets/MioSenpai.jpg",
-      github: "",
+      github: "https://github.com/NguyennDangg/Todo-App",
       liveDemo: "https://todo-app-woad-nine-16.vercel.app/",
     },
     {
