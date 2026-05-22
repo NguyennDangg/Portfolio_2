@@ -40,11 +40,11 @@ function Projects() {
     },
     {
       title: "PROJECT_05",
-      description:"Work in Progress",
-      tech: "",
-      image: "https://static.vecteezy.com/system/resources/previews/022/655/959/original/work-in-progress-rubber-stamp-work-in-progress-grunge-stamp-seal-illustration-vector.jpg",
-      github: "",
-      liveDemo: "",
+      description:"A Neon Genesis Evangelion themed Spotify music player. (Will update later)",
+      tech: "React / Framer Motion / GSAP",
+      image: "https://i.pinimg.com/736x/32/8e/9e/328e9e5a29ff951bc0e6e0644bea6b2b.jpg",
+      github: "https://github.com/NguyennDangg/Dangify",
+      liveDemo: "https://dangify.vercel.app/",
     },
   ];
 
