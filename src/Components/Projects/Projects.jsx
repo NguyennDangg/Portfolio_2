@@ -40,7 +40,7 @@ function Projects() {
     },
     {
       title: "PROJECT_05",
-      description:"A Neon Genesis Evangelion themed Spotify music player. (Will update later)",
+      description:"A Neon Genesis Evangelion themed Spotify music player.",
       tech: "React / Framer Motion / GSAP",
       image: "https://i.pinimg.com/736x/32/8e/9e/328e9e5a29ff951bc0e6e0644bea6b2b.jpg",
       github: "https://github.com/NguyennDangg/Dangify",
