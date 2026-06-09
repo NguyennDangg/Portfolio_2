@@ -53,10 +53,18 @@ npm run dev
 
 ```
 src/
-├── components/     # Reusable UI components
-├── pages/          # Route-level views
-├── assets/         # Fonts, images
-└── styles/         # Global CSS & variables
+├── Components/
+│   ├── About/
+│   ├── BackToTop/
+│   ├── Contact/
+│   ├── Footer/
+│   ├── HeroSection/
+│   ├── Loader/
+│   ├── Navbar/
+│   └── Projects/
+├── App.jsx
+├── App.css
+├── main.jsx
 ```
 
 ---
