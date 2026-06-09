@@ -1,16 +1,70 @@
-# React + Vite
+<div align="center">
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+```
+██████╗  ██████╗ ██████╗ ████████╗███████╗ ██████╗ ██╗     ██╗ ██████╗     ██╗   ██╗██████╗ 
+██╔══██╗██╔═══██╗██╔══██╗╚══██╔══╝██╔════╝██╔═══██╗██║     ██║██╔═══██╗    ██║   ██║╚════██╗
+██████╔╝██║   ██║██████╔╝   ██║   █████╗  ██║   ██║██║     ██║██║   ██║    ██║   ██║ █████╔╝
+██╔═══╝ ██║   ██║██╔══██╗   ██║   ██╔══╝  ██║   ██║██║     ██║██║   ██║    ╚██╗ ██╔╝██╔═══╝ 
+██║     ╚██████╔╝██║  ██║   ██║   ██║     ╚██████╔╝███████╗██║╚██████╔╝     ╚████╔╝ ███████╗
+╚═╝      ╚═════╝ ╚═╝  ╚═╝   ╚═╝   ╚═╝      ╚═════╝ ╚══════╝╚═╝ ╚═════╝      ╚═══╝  ╚══════╝
+```
 
-Currently, two official plugins are available:
+**`EVANGELION-INSPIRED PORTFOLIO`** · **`REACT`** · **`VITE`** · **`FRAMER MOTION`**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+[![Live](https://img.shields.io/badge/LIVE-c1121f?style=flat-square&logo=vercel&logoColor=white)](https://portfolio-2-ruddy-psi.vercel.app)
+![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white)
+![Framer](https://img.shields.io/badge/Framer_Motion-black?style=flat-square&logo=framer&logoColor=white)
 
-## React Compiler
+</div>
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+> *The boundary of the self — rendered in code.*
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Portfolio V2 is a cyberpunk/anime-inspired personal site built around atmosphere first, layout second.  
+Visually rooted in NERV system interfaces and EVA's visual language — dark, intentional, and a little unsettling.
+
+---
+
+## Stack
+
+| | |
+|---|---|
+| **Framework** | React + Vite |
+| **Animation** | Framer Motion |
+| **Styling** | CSS · CSS Variables |
+| **Deployment** | Vercel |
+
+---
+
+## Run locally
+
+```bash
+git clone https://github.com/NguyennDangg/Portfolio_2.git
+cd Portfolio_2
+npm install
+npm run dev
+```
+
+---
+
+## Project structure
+
+```
+src/
+├── components/     # Reusable UI components
+├── pages/          # Route-level views
+├── assets/         # Fonts, images
+└── styles/         # Global CSS & variables
+```
+
+---
+
+<div align="center">
+
+*noise in my head — code in my hands*
+
+**[NguyennDangg](https://github.com/NguyennDangg)** · 2026
+
+</div>
